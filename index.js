@@ -5,6 +5,7 @@ const { Note } = require('./model/note');
 require('dotenv').config();
 const app = express();
 
+app.use(express.static(path.join(__dirname, 'build')));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
@@ -39,7 +40,7 @@ app.post('/api/notes', async (req, res) => {
 });
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
 const PORT = 8000;
