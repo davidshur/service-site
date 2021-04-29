@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "dev": "concurrently \"nodemon index.js\" \"cd view && npm start\""
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,7 @@
     "mongoose": "^5.12.6"
   },
   "devDependencies": {
+    "concurrently": "^6.0.2",
     "nodemon": "^2.0.7"
   }
 }
