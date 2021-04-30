@@ -49,7 +49,7 @@ function PhotoGallery() {
             {SLIDESHOW.map(slide=>(
                 <Carousel.Item>
                     <img
-                        className="d-block w-50"
+                        className="d-block"
                         src={slide.img}
                         alt={slide.alt}
                     />
