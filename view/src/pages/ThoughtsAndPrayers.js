@@ -1,5 +1,5 @@
-function Notes() {
+function ThoughtsAndPrayers() {
   return <p>ThoughtsAndPrayers</p>
 }
 
-export default Notes;
+export default ThoughtsAndPrayers;

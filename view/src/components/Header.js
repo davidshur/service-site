@@ -11,7 +11,8 @@ function Header() {
       <Nav className="ml-auto">
         <Nav.Link as={Link} to="/">Home</Nav.Link>
         <Nav.Link as={Link} to="/photos">Photos</Nav.Link>
-        <Nav.Link as={Link} to="/notes">Thoughts and Prayers</Nav.Link>
+        <Nav.Link as={Link} to="/videos">Videos</Nav.Link>
+        <Nav.Link as={Link} to="/thoughtsAndPrayers">Thoughts and Prayers</Nav.Link>
         <a
           href="https://www.gofundme.com/f/in-the-loving-memory-of-john-huynh?utm_campaign=p_cp_url&utm_medium=os&utm_source=customer"
           target="_blank"
