@@ -27,11 +27,11 @@ function MessageVerification() {
       <hr />
       <CardColumns>
         {thoughtsAndPrayers && thoughtsAndPrayers.map(item => (
-          <Card bg={item.verified === 'false' ? 'danger' : ''} className={!item.verified === 'false' ? 'text-white' : ''} key={item._id}>
+          <Card bg={item.verified === 'false' ? 'danger' : ''} className={item.verified === 'false' ? 'text-white' : ''} key={item._id}>
             <Card.Body>
               <Card.Title>{item.name}</Card.Title>
               <Card.Text>{item.message}</Card.Text>
-              <Button id={item._id} onClick={event => handleClick(event.target.id)} variant={item.verified === 'false' ? 'outline-light' : 'outline-danger'}>{item.verified === 'false' ? 'Verify' : 'Remove'}</Button>
+              {item.verified === 'false' && <Button id={item._id} onClick={event => handleClick(event.target.id)} variant="outline-light">Verify</Button>}
             </Card.Body>
           </Card>
         ))}
