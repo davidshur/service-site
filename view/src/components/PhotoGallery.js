@@ -1,10 +1,47 @@
-import john1 from "../images/john1.jpg";
-import john2 from "../images/john2.jpg.jpg";
-import john3 from "../images/john3.jpg.jpg";
-import john4 from "../images/john4.jpg.jpg";
-import john5 from "../images/john5.jpg.jpg";
+import Carousel from "react-bootstrap/Carousel";
 
-const SLIDESHOW = [john1, john2, john3, john4, john5];
+import john0 from "../images/john1.jpg";
+import john1 from "../images/john2.jpg";
+import john2 from "../images/john3.jpg";
+import john3 from "../images/john4.jpg";
+import john4 from "../images/john5.jpg";
+
+const SLIDESHOW = [
+    {
+        id: 0,
+        img: john0,
+        alt: "john0",
+        title: "title0",
+        desc: "desc0"
+    },
+    {
+        id: 1,
+        img: john1,
+        alt: "john1",
+        title: "title1",
+        desc: "desc1"
+    },
+    {
+        id: 2,
+        img: john2,
+        alt: "john2",
+        title: "title2",
+        desc: "desc2"
+    },
+    {
+        id: 3,
+        img: john3,
+        alt: "john3",
+        title: "title3",
+        desc: "desc3"
+    },
+    {
+        id: 4,
+        img: john4,
+        alt: "john4",
+        title: "title4",
+        desc: "desc4"
+    }];
 
 function PhotoGallery() {
     return (
@@ -12,7 +49,7 @@ function PhotoGallery() {
             {SLIDESHOW.map(slide=>(
                 <Carousel.Item>
                     <img
-                        className="d-block w-100"
+                        className="d-block w-50"
                         src={slide.img}
                         alt={slide.alt}
                     />
