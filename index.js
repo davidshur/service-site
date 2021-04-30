@@ -52,7 +52,11 @@ app.post('/api/verification', async (req, res) => {
   try {
     const { id } = req.body;
     const updatedNote = await Note.findById(id);
-    updatedNote.verified = !updatedNote.verified;
+    if (updatedNote.verified === 'true') {
+      updatedNote.verified = 'false';
+    } else {
+      updatedNote.verified = 'true';
+    }
     await updatedNote.save();
     res.send('Note saved!');
   } catch (err) {
