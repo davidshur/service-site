@@ -11,7 +11,7 @@ app.use(express.urlencoded({ extended: true }));
 
 mongoose.connect(
   process.env.MONGO_URI,
-  { useUnifiedTopology: true, useNewUrlParser: true },
+  { useUnifiedTopology: true, useNewUrlParser: true, useFindAndModify: false },
   () => {
     console.log('DB connected...');
   }
@@ -33,6 +33,18 @@ app.post('/api/notes', async (req, res) => {
     const newNote = new Note({ name, message });
     await newNote.save();
 
+    res.send('Note saved!');
+  } catch (err) {
+    res.status(400).send(err);
+  }
+});
+
+app.post('/api/verification', async (req, res) => {
+  try {
+    const { id } = req.body;
+    const updatedNote = await Note.findById(id);
+    updatedNote.verified = !updatedNote.verified;
+    await updatedNote.save();
     res.send('Note saved!');
   } catch (err) {
     res.status(400).send(err);

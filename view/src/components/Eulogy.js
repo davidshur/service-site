@@ -1,6 +1,6 @@
 function Eulogy() {
     return (
-        <div className="col-md-4 col-12">
+        <div>
             <h3>Eulogy</h3>
             <p className="text-muted">By: Rumeet Huynh</p>
             <hr />
