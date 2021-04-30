@@ -1,11 +1,12 @@
 import {Container} from "react-bootstrap";
 import Eulogy from "../components/Eulogy";
-import Slideshow from "../components/Slideshow";
+import SlideshowVideo from "../components/SlideshowVideo";
+import BaptismVideo from "../components/BaptismVideo";
 
 function Home() {
   return(
       <Container>
-          <Slideshow />
+          <SlideshowVideo />
           <Eulogy />
       </Container>
   );
