@@ -1,23 +1,32 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import Card from 'react-bootstrap/Card';
+import CardColumns from 'react-bootstrap/CardColumns';
 
 function ThoughtsAndPrayersDisplay() {
-  const [thoughtsAndPrayers, setThoughtsAndPrayers] = useState([]);
+  const [thoughtsAndPrayers, setThoughtsAndPrayers] = useState(null);
 
   useEffect(() => {
-    const newThoughtsAndPrayers = getThoughtsAndPrayers();
-    setThoughtsAndPrayers(newThoughtsAndPrayers);
+    getThoughtsAndPrayers();
   }, []);
 
   async function getThoughtsAndPrayers() {
-    const response = axios.get('/api/notes');
-    setThoughtsAndPrayers(response);
+    const { data } = await axios.get('/api/notes');
+    setThoughtsAndPrayers(data);
   }
 
+
   return (
-    <>
-      {thoughtsAndPrayers.length > 1 ? thoughtsAndPrayers.map(item => <p>{item}</p>) : <p>nope</p>}
-    </>
+    <CardColumns>
+      {thoughtsAndPrayers && thoughtsAndPrayers.map(item => (
+        <Card key={item._id}>
+          <Card.Body>
+            <Card.Title>{item.name}</Card.Title>
+            <Card.Text>{item.message}</Card.Text>
+          </Card.Body>
+        </Card>
+      ))}
+    </CardColumns>
   );
 }
 
