@@ -1,5 +1,5 @@
 function Notes() {
-  return <p>Notes</p>
+  return <p>ThoughtsAndPrayers</p>
 }
 
 export default Notes;
