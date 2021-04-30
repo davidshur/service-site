@@ -24,7 +24,7 @@ function Header() {
           Donate
         </Nav.Link>
         <a
-          className="d-none d-lg-block"
+          className="ml-2 d-none d-lg-block"
           href="https://www.gofundme.com/f/in-the-loving-memory-of-john-huynh?utm_campaign=p_cp_url&utm_medium=os&utm_source=customer"
           target="_blank"
           rel="noreferrer"
