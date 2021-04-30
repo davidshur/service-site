@@ -17,16 +17,20 @@ function ThoughtsAndPrayersDisplay() {
 
 
   return (
-    <CardColumns>
-      {thoughtsAndPrayers && thoughtsAndPrayers.map(item => (
-        <Card key={item._id}>
-          <Card.Body>
-            <Card.Title>{item.name}</Card.Title>
-            <Card.Text>{item.message}</Card.Text>
-          </Card.Body>
-        </Card>
-      ))}
-    </CardColumns>
+    <div className="col-md-8 col-12">
+      <h3>Thoughts and Prayers</h3>
+      <hr />
+      <CardColumns className="w-100">
+        {thoughtsAndPrayers && thoughtsAndPrayers.map(item => (
+          <Card key={item._id}>
+            <Card.Body>
+              <Card.Title>{item.name}</Card.Title>
+              <Card.Text>{item.message}</Card.Text>
+            </Card.Body>
+          </Card>
+        ))}
+      </CardColumns>
+    </div>
   );
 }
 
