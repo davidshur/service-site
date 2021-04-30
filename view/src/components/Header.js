@@ -5,11 +5,11 @@ import Navbar from 'react-bootstrap/Navbar';
 function Header() {
   return (
     <Navbar bg="light" variant="light">
-      <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+      <Navbar.Brand as={Link} to="/">In Loving Memory of John Huynh</Navbar.Brand>
       <Nav className="ml-auto">
-        <Nav.Link as={Link} href="#home">Home</Nav.Link>
-        <Nav.Link as={Link} href="#features">Features</Nav.Link>
-        <Nav.Link as={Link} href="#pricing">Pricing</Nav.Link>
+        <Nav.Link as={Link} to="/">Home</Nav.Link>
+        <Nav.Link as={Link} to="/photos">Photos</Nav.Link>
+        <Nav.Link as={Link} to="/notes">Notes</Nav.Link>
       </Nav>
     </Navbar>
   );
