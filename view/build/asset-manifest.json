@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.25082354.chunk.css",
-    "main.js": "/static/js/main.c999acda.chunk.js",
-    "main.js.map": "/static/js/main.c999acda.chunk.js.map",
+    "main.js": "/static/js/main.43237874.chunk.js",
+    "main.js.map": "/static/js/main.43237874.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.77ebf3ec.js",
     "runtime-main.js.map": "/static/js/runtime-main.77ebf3ec.js.map",
     "static/css/2.4c97ca4f.chunk.css": "/static/css/2.4c97ca4f.chunk.css",
@@ -14,6 +14,7 @@
     "static/css/2.4c97ca4f.chunk.css.map": "/static/css/2.4c97ca4f.chunk.css.map",
     "static/css/main.25082354.chunk.css.map": "/static/css/main.25082354.chunk.css.map",
     "static/js/2.2a8f59f3.chunk.js.LICENSE.txt": "/static/js/2.2a8f59f3.chunk.js.LICENSE.txt",
+    "static/media/banner_background.b7aa7c08.jpg": "/static/media/banner_background.b7aa7c08.jpg",
     "static/media/john1.c13895bb.jpg": "/static/media/john1.c13895bb.jpg",
     "static/media/john2.257023b6.jpg": "/static/media/john2.257023b6.jpg",
     "static/media/john3.4e56a511.jpg": "/static/media/john3.4e56a511.jpg",
@@ -25,6 +26,6 @@
     "static/css/2.4c97ca4f.chunk.css",
     "static/js/2.2a8f59f3.chunk.js",
     "static/css/main.25082354.chunk.css",
-    "static/js/main.c999acda.chunk.js"
+    "static/js/main.43237874.chunk.js"
   ]
 }
