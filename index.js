@@ -39,7 +39,7 @@ app.post('/api/notes', async (req, res) => {
   }
 });
 
-app.get('/api/verification', async (req, res) => {
+app.get('/api/verify', async (req, res) => {
   try {
     const allNotes = await Note.find({});
     res.send(allNotes);

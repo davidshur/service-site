@@ -12,12 +12,12 @@ function MessageVerification() {
   }, []);
 
   async function getThoughtsAndPrayers() {
-    const { data } = await axios.get('/api/verification');
+    const { data } = await axios.get('/api/verify');
     setThoughtsAndPrayers(data);
   }
 
   async function handleClick(id) {
-    await axios.post('/api/verification', { id });
+    await axios.post('/api/verify', { id });
     getThoughtsAndPrayers();
   }
 
@@ -27,11 +27,11 @@ function MessageVerification() {
       <hr />
       <CardColumns>
         {thoughtsAndPrayers && thoughtsAndPrayers.map(item => (
-          <Card bg={item.verified === 'false' ? 'danger' : ''} className={item.verified === 'false' ? 'text-white' : ''} key={item._id}>
+          <Card bg={!item.verified ? 'danger' : ''} className={!item.verified ? 'text-white' : ''} key={item._id}>
             <Card.Body>
               <Card.Title>{item.name}</Card.Title>
               <Card.Text>{item.message}</Card.Text>
-              {item.verified === 'false' && <Button id={item._id} onClick={event => handleClick(event.target.id)} variant="outline-light">Verify</Button>}
+              {!item.verified && <Button id={item._id} onClick={event => handleClick(event.target.id)} variant="outline-light">Verify</Button>}
             </Card.Body>
           </Card>
         ))}

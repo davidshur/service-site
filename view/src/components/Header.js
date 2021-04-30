@@ -7,7 +7,7 @@ import Navbar from 'react-bootstrap/Navbar';
 function Header() {
   return (
     <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
-      <Navbar.Brand as={Link} to="/">John Huynh</Navbar.Brand>
+      <Navbar.Brand as={Link} to="/">In Memory of John Huynh</Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
       <Nav className="ml-auto">

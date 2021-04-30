@@ -16,7 +16,7 @@ function App() {
         <Route exact path="/photos" component={Photos} />
         <Route exact path="/videos" component={Videos} />
         <Route exact path="/thoughtsAndPrayers" component={ThoughtsAndPrayers} />
-        <Route exact path="/verification" component={Verification} />
+        <Route exact path="/verify" component={Verification} />
         <Route path="/" component={Home} />
       </Switch>
     </>
