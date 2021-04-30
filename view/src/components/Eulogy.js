@@ -1,6 +1,8 @@
+import Container from "react-bootstrap/Container"
+
 function Eulogy() {
     return (
-        <div>
+        <Container>
             <p>I have the impossible task of summarizing John Huynhs life.</p>
             <p>John was loved by everyone, I can say that confidently.</p>
             <p>He was born in Lancaster , Pennsylvania in 1992 to Long and
@@ -16,7 +18,7 @@ function Eulogy() {
                 his change affected every aspect of his life going forward and John felt called to
                 live a life that exemplified Christ’s love. He is a loving son, brother, husband,
                 and a true follower of Christ.</p>
-        </div>
+        </Container>
     )
 }
 
