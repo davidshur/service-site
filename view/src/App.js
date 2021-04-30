@@ -1,4 +1,5 @@
 import Eulogy from './components/Eulogy';
+import { R}
 
 function App() {
   return (
