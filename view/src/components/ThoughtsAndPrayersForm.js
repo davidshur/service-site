@@ -16,13 +16,13 @@ function ThoughtsAndPrayersForm() {
             </Form.Group>
             <Form.Group controlId="exampleForm.ControlTextarea1">
               <Form.Label>Message</Form.Label>
-              <Form.Control as="textarea" rows={3} />
+              <Form.Control as="textarea" placeholder="Enter your thoughts and prayers" rows={3} />
               <Form.Text className="text-muted">
-                Note: your name and message may be visible to other website visitors.
+                Note: Your name and message may be visible to other website visitors.
               </Form.Text>
             </Form.Group>
             <Button variant="primary" type="submit">
-              Submit
+              Share
             </Button>
           </Form>
         </Card.Body>
