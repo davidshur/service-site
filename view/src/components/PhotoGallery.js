@@ -47,7 +47,7 @@ function PhotoGallery() {
     return (
         <Carousel>
             {SLIDESHOW.map(slide=>(
-                <Carousel.Item>
+                <Carousel.Item key={slide.id}>
                     <img
                         className="d-block"
                         src={slide.img}
