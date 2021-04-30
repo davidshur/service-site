@@ -6,7 +6,6 @@ import BaptismVideo from "../components/BaptismVideo";
 function Home() {
   return(
       <Container>
-          <SlideshowVideo />
           <Eulogy />
       </Container>
   );
