@@ -48,7 +48,7 @@ const PHOTOS = [
 function Photos() {
   return (
       <Container>
-          <h1>Photo Gallery</h1>
+          <h3>Photo Gallery</h3>
           <hr/>
           <CardColumns>
               {PHOTOS.map(photo=>(

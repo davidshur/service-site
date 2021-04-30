@@ -6,14 +6,25 @@ import Navbar from 'react-bootstrap/Navbar';
 
 function Header() {
   return (
-    <Navbar bg="light" variant="light">
-      <Navbar.Brand as={Link} to="/">In Loving Memory of John Huynh</Navbar.Brand>
+    <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
+      <Navbar.Brand as={Link} to="/">John Huynh</Navbar.Brand>
+      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+      <Navbar.Collapse id="responsive-navbar-nav">
       <Nav className="ml-auto">
         <Nav.Link as={Link} to="/">Home</Nav.Link>
         <Nav.Link as={Link} to="/photos">Photos</Nav.Link>
         <Nav.Link as={Link} to="/videos">Videos</Nav.Link>
         <Nav.Link as={Link} to="/thoughtsAndPrayers">Thoughts and Prayers</Nav.Link>
+        <Nav.Link
+          className="d-lg-none text-success"
+          href="https://www.gofundme.com/f/in-the-loving-memory-of-john-huynh?utm_campaign=p_cp_url&utm_medium=os&utm_source=customer"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Donate
+        </Nav.Link>
         <a
+          className="d-none d-lg-block"
           href="https://www.gofundme.com/f/in-the-loving-memory-of-john-huynh?utm_campaign=p_cp_url&utm_medium=os&utm_source=customer"
           target="_blank"
           rel="noreferrer"
@@ -21,6 +32,7 @@ function Header() {
           <Button variant="success">Donate</Button>
         </a>
       </Nav>
+      </Navbar.Collapse>
     </Navbar>
   );
 }
