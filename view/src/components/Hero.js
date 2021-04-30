@@ -15,7 +15,7 @@ function Hero() {
         </p>
       <p>
         <a
-          href="https://us02web.zoom.us/j/88911364511?pwd=bEZqRzJFNVlyckdWczdqaXBFSXlJZz09"
+          href="https://youtu.be/AXuSxts3CIk"
           target="_blank"
           rel="noreferrer"
         >
