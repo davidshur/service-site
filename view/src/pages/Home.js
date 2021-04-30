@@ -1,5 +1,14 @@
+import {Container} from "react-bootstrap";
+import Eulogy from "../components/Eulogy";
+import Slideshow from "../components/Slideshow";
+
 function Home() {
-  return <p>Home</p>
+  return(
+      <Container>
+          <Slideshow />
+          <Eulogy />
+      </Container>
+  );
 }
 
 export default Home;

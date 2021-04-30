@@ -14,8 +14,8 @@ function Eulogy() {
                 and looking sharp for any occasion. His number one goal in life was
                 to honor his mother and build a successful way to provide for his family.
                 He was always focused on improving the kind of person he was and seeking
-                the truth. This led him to finding and building a relationship with the Lord in 2019. T
-                his change affected every aspect of his life going forward and John felt called to
+                the truth. This led him to finding and building a relationship with the Lord in 2019.
+                This change affected every aspect of his life going forward and John felt called to
                 live a life that exemplified Christ’s love. He is a loving son, brother, husband,
                 and a true follower of Christ.</p>
         </Container>
