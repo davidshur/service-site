@@ -19,8 +19,8 @@ mongoose.connect(
 
 app.get('/api/notes', async (req, res) => {
   try {
-    const allNotes = await Note.find({});
-    res.send(allNotes);
+    const verifiedNotes = await Note.find({ verified: true });
+    res.send(verifiedNotes);
   } catch (err) {
     res.status(400).send(err);
   }
@@ -34,6 +34,15 @@ app.post('/api/notes', async (req, res) => {
     await newNote.save();
 
     res.send('Note saved!');
+  } catch (err) {
+    res.status(400).send(err);
+  }
+});
+
+app.get('/api/verification', async (req, res) => {
+  try {
+    const allNotes = await Note.find({});
+    res.send(allNotes);
   } catch (err) {
     res.status(400).send(err);
   }

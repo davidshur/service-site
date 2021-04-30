@@ -12,7 +12,7 @@ function MessageVerification() {
   }, []);
 
   async function getThoughtsAndPrayers() {
-    const { data } = await axios.get('/api/notes');
+    const { data } = await axios.get('/api/verification');
     setThoughtsAndPrayers(data);
   }
 
