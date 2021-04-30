@@ -9,8 +9,10 @@ function Hero() {
         backgroundSize: 'cover',
         backgroundPosition: 'center'}}>
       <h1 className="text-white">Live Memorial Service </h1>
-        <p className="text-white">We will be hosting a memorial service for John on <strong>April 30th, 2020 at 3pm.</strong> </p>
-        <p className="text-white">Please join the Zoom livestream to help us commemorate the amazing life of John Huynh.</p>
+        <p className="text-white">We will be hosting a memorial service for John on <strong>April 30th, 2021 at 3pm.</strong> </p>
+        <p className="text-white">Please join the Zoom livestream to help us commemorate the amazing life of John Huynh.
+            A recording will be uploaded after the event for those who are unable to attend the live stream.
+        </p>
       <p>
         <a
           href="https://us02web.zoom.us/j/88911364511?pwd=bEZqRzJFNVlyckdWczdqaXBFSXlJZz09"

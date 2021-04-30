@@ -48,7 +48,7 @@ app.get('/api/verification', async (req, res) => {
   }
 });
 
-app.post('/api/verification', async (req, res) => {
+app.post('/api/verify', async (req, res) => {
   try {
     const { id } = req.body;
     await Note.findByIdAndUpdate(id, { verified: 'true' });
